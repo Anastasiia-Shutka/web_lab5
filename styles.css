@@ -1,0 +1,152 @@
+body {
+    font-family: 'Space Grotesk';
+    background-color: #ffcccc;
+    display: flex;
+    flex-direction: row;
+    color: cadetblue;
+}
+
+.enter {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px 50px;
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    width: 25vw;
+    height: 35px;
+}
+
+h3 {
+    font-weight: 300;
+    color: #d5006d;
+}
+
+button {
+    border: none;
+    border-radius: 7px;
+    width: 25vw;
+    height: 50px;
+    background-color: #d5006d;
+    color: #ffcccc;
+    font-family: 'Space Grotesk';
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.5s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.contains {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.search, .cancel {
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    margin: 5px;
+}
+
+.item-container__image {
+    width: 300px;
+    height: auto;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.sort-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: -20%;
+}
+
+.sort-options {
+    border: none;
+    border-radius: 5px;
+    width: 25vw;
+    height: 35px;
+    font-size: 14px;
+    background-color: white;
+    color: grey;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    width: 40%;
+}
+
+.modal-content input {
+    width: 100%; 
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    font-size: 16px; 
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-info, .btn-delete {
+    width: 300px;;
+    margin-bottom: 10px;
+}
+
+#items-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.item-card {
+    width: calc(50% - 8px); 
+    box-sizing: border-box; 
+}
+

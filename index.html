@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" id="close-modal">&times;</span>
+            <h3>Add Movie</h3>
+            <div class="name-block">
+                <h3>Movie Title</h3>
+                <input type="text" id="input-name" required>
+            </div>
+            <div class="duration-block">
+                <h3>Duration (min)</h3>
+                <input type="number" id="input-duration" required min="1">
+            </div>
+            <div class="reviews-block">
+                <h3>IMDB Reviews</h3>
+                <input type="number" id="input-reviews" required min="0">
+            </div>
+            <button id="save-movie">Save</button>
+        </div>
+    </div>
+
+    <div class="enter">
+        <button id="create">Add Movie</button>
+        <button class="count-reviews" id="count-reviews">Count Total Reviews</button>
+        <p id="review-count" class="review-count"></p>
+
+        <div class="sort-container">
+            <h3 for="sort-options">Sort By:</h3>
+            <select id="sort-options" class="sort-options">
+                <option value="name">Title</option>
+                <option value="duration">Duration</option>
+                <option value="reviews">IMDB Reviews</option>
+            </select>
+            <button id="sort-button">Sort</button>
+        </div>        
+    </div>
+
+    <div class="contains" id="contains">
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search by Title">
+            <button id="search" class="search">Search</button>
+            <button id="cancel" class="cancel">Cancel</button>
+        </div>
+        <ul id="items-container"></ul>
+    </div>
+
+    <script type="module" src="./dom_util.js"></script>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
+
